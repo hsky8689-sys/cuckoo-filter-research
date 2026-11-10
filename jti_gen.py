@@ -33,5 +33,5 @@ if __name__ == "__main__":
     sample = random_jtis(5)
     for jti in sample:
         print(jti)
-    assert len(set(random_jtis(10_000_000))) == 10_000_000, "collision in 10k draws -- shouldn't happen"
+    assert len(set(random_jtis(10_000))) == 10_000, "collision in 10k draws -- shouldn't happen"
     print("uniqueness sanity check passed (10,000 draws, 0 collisions)")
