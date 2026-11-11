@@ -4,10 +4,14 @@
 Two candidates, matching the "hash ablation" design from the experiment chapter:
 
 1. murmurhash64a  -- the actual hash Redis uses for h1 in its cuckoo filter
-   (MurmurHash64A, Austin Appleby, MurmurHash2 family). This is the one with
-   the documented cheap-preimage shortcut (Filic et al., ~258 evaluations),
-   so grinding against it is expected to be roughly constant-cost, NOT
-   growing with nB as the structural formula predicts.
+   (MurmurHash64A, Austin Appleby, MurmurHash2 family). It is NOT one-way:
+   for a single-block input every step is algebraically invertible, so the
+   attacker constructs an input hitting a chosen bucket directly instead of
+   grinding. We implement and verify this inversion ourselves in
+   murmur_invert.py (round-trip checked on random outputs), rather than
+   relying on any external preimage result. Consequence: targeted crafting
+   against murmur is O(1) in nB, not the nB^2 the structural formula predicts
+   for a one-way hash.
 
    Verified line-by-line against Appleby's reference implementation
    (public domain), smhasher/MurmurHash2.cpp:
