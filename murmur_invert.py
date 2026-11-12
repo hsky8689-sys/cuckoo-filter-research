@@ -16,9 +16,8 @@ Verificat prin round-trip contra hashes.murmurhash64a (acelasi algoritm pe
 care-l foloseste filtrul).
 """
 import struct
-
-from cuckoo_filter import CF
 from hashes import murmurhash64a, MASK64
+from cuckoo_filter import CF
 
 M = 0xc6a4a7935bd1e995          # constanta MurmurHash2 (= 0x...5bd1e995)
 R = 47
