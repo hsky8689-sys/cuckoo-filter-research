@@ -1,0 +1,19 @@
+nB,attacker,r_blake_eff,blake_total_s,blake_total_h,feasible_1h,feasible_24h
+1024,1-core,10000000.0,0.405,405.0 ms,True,True
+1024,many-core (x100),1000000000.0,0.1455,145.5 ms,True,True
+1024,GPU/botnet (x1000),10000000000.0,0.1431,143.1 ms,True,True
+4096,1-core,10000000.0,4.337,4.3 s,True,True
+4096,many-core (x100),1000000000.0,0.1848,184.8 ms,True,True
+4096,GPU/botnet (x1000),10000000000.0,0.1471,147.1 ms,True,True
+16384,1-core,10000000.0,67.25,1.1 min,True,True
+16384,many-core (x100),1000000000.0,0.8139,813.9 ms,True,True
+16384,GPU/botnet (x1000),10000000000.0,0.21,210.0 ms,True,True
+65536,1-core,10000000.0,1074,17.9 min,True,True
+65536,many-core (x100),1000000000.0,10.88,10.9 s,True,True
+65536,GPU/botnet (x1000),10000000000.0,1.217,1.2 s,True,True
+262144,1-core,10000000.0,1.718e+04,4.8 h,False,True
+262144,many-core (x100),1000000000.0,171.9,2.9 min,True,True
+262144,GPU/botnet (x1000),10000000000.0,17.32,17.3 s,True,True
+1048576,1-core,10000000.0,2.749e+05,3.2 days,False,False
+1048576,many-core (x100),1000000000.0,2749,45.8 min,True,True
+1048576,GPU/botnet (x1000),10000000000.0,275,4.6 min,True,True

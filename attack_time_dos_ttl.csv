@@ -1,0 +1,6 @@
+scenario,nB,T_s,blake_total_s,blake_total_h,blake_feasible,murmur_total_s,murmur_total_h,murmur_feasible
+auth 10min (MFA),512,600,0.2084,208.39 ms,FEASIBLE,0.1429,142.86 ms,FEASIBLE
+auth 1h,4096,3600,4.337,4.34 s,FEASIBLE,0.1429,142.86 ms,FEASIBLE
+auth 24h (default),131072,86400,4295,1.19 h,FEASIBLE,0.1429,142.86 ms,FEASIBLE
+cache 1h,1048576,3600,2.749e+05,3.18 days,self-defeat,0.1429,142.86 ms,FEASIBLE
+cache 24h,33554432,86400,2.815e+08,8.94 years,self-defeat,0.1429,142.86 ms,FEASIBLE
