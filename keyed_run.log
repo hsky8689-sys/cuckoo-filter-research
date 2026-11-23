@@ -1,0 +1,12 @@
+flood s=1 nB=  64: inserts=    41.4 +-   0.9  alpha_hat=0.646
+flood s=1 nB= 128: inserts=    76.2 +-   1.7  alpha_hat=0.595
+flood s=1 nB= 256: inserts=   148.2 +-   2.2  alpha_hat=0.579
+flood s=1 nB= 512: inserts=   278.6 +-   4.1  alpha_hat=0.544
+flood s=1 nB=1024: inserts=   525.1 +-   7.0  alpha_hat=0.513
+flood s=2 nB=  64: inserts=    98.3 +-   1.4  alpha_hat=0.768
+flood s=2 nB= 128: inserts=   194.3 +-   2.2  alpha_hat=0.759
+flood s=2 nB= 256: inserts=   376.9 +-   3.2  alpha_hat=0.736
+flood s=2 nB= 512: inserts=   731.2 +-   6.4  alpha_hat=0.714
+flood s=2 nB=1024: inserts=  1409.1 +-  11.5  alpha_hat=0.688
+flood s=4 nB=  64: inserts=   236.7 +-   0.9  alpha_hat=0.924
+flood s=4 nB= 128: inserts=   465.2 +-   1.7  alpha_hat=0.909
